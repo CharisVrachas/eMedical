@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="370.0" prefWidth="653.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="emedical.FXMLDocumentController">
+    <children>
+      <ImageView fitHeight="293.0" fitWidth="360.0" layoutX="7.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/hospital-bg.jpg" />
+         </image>
+      </ImageView>
+      <Text fill="#1a2c4d" layoutX="14.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="eMedical" wrappingWidth="360.0">
+         <font>
+            <Font name="Berlin Sans FB" size="90.0" />
+         </font>
+      </Text>
+      <AnchorPane layoutX="396.0" layoutY="54.0" prefHeight="261.0" prefWidth="211.0" style="-fx-background-color: #49958C; -fx-background-radius: 10;">
+         <children>
+            <Text fill="WHITE" layoutX="24.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome!">
+               <font>
+                  <Font name="Berlin Sans FB" size="40.0" />
+               </font>
+            </Text>
+            <TextField fx:id="login_email" layoutX="31.0" layoutY="84.0" promptText="Enter your email" style="-fx-background-color: #49958C; -fx-border-color: #49958C  #49958C black  #49958C; -fx-prompt-text-fill: white;" />
+            <Button layoutX="56.0" layoutY="174.0" mnemonicParsing="false" onAction="#login_in_system" prefHeight="28.0" prefWidth="98.0" style="-fx-background-color: #2F615B; -fx-cursor: hand;" text="Login" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB" size="20.0" />
+               </font>
+            </Button>
+            <Hyperlink layoutX="56.0" layoutY="209.0" onAction="#register" style="-fx-underline: true;" text="Register" textFill="#2f615b" />
+            <PasswordField fx:id="login_pass" layoutX="30.0" layoutY="124.0" promptText="Enter your password" style="-fx-border-color: #49958C  #49958C black  #49958C; -fx-background-color: #49958C; -fx-prompt-text-fill: white;" />
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>

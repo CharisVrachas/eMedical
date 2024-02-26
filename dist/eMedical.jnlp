@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="eMedical.jnlp">
+  <information>
+    <title>eMedical</title>
+    <vendor>Ìבס-×בס</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="eMedical.jar" size="296238" download="eager" />
+    <jar href="lib\log4j-1.2.17.jar" size="489883" download="eager" />
+    <jar href="lib\ojdbc7.jar" size="3397734" download="eager" />
+    <jar href="lib\postgresql-8.3-603.jdbc4.jar" size="474746" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="emedical.EMedical"  name="eMedical" />
+  <update check="always"/>
+</jnlp>

@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="515.0" prefWidth="994.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="emedical.HomeController">
+   <left>
+      <AnchorPane prefHeight="400.0" prefWidth="153.0" style="-fx-background-color: #49958C;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="55.0" fitWidth="53.0" layoutX="47.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/home_icon.png" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutX="-9.0" layoutY="108.0" prefHeight="45.0" prefWidth="166.0" style="-fx-background-color: #2F615B;">
+               <children>
+                  <Button layoutX="63.0" layoutY="1.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="123.0" style="-fx-background-color: #2F615B; -fx-cursor: hand;" text="HOME" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="28.0" fitWidth="33.0" layoutX="22.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/home_button.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutY="165.0" prefHeight="45.0" prefWidth="158.0" style="-fx-background-color: #49958C;">
+               <children>
+                  <Button layoutX="63.0" layoutY="1.0" mnemonicParsing="false" onAction="#rooms" prefHeight="43.0" prefWidth="114.0" style="-fx-background-color: #49958C; -fx-cursor: hand;" text="ROOMS" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="28.0" fitWidth="33.0" layoutX="14.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/hospital_bed.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutY="222.0" prefHeight="45.0" prefWidth="157.0" style="-fx-background-color: #49958C;">
+               <children>
+                  <Button layoutX="63.0" layoutY="1.0" mnemonicParsing="false" onAction="#duty" prefHeight="43.0" prefWidth="115.0" style="-fx-background-color: #49958C #49958C; -fx-cursor: hand;" text="DUTY" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="28.0" fitWidth="33.0" layoutX="14.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/duty.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="-5.0" layoutY="278.0" prefHeight="45.0" prefWidth="183.0" style="-fx-background-color: #49958C;">
+               <children>
+                  <Button layoutX="63.0" layoutY="1.0" mnemonicParsing="false" onAction="#medicine" prefHeight="43.0" prefWidth="119.0" style="-fx-background-color: #49958C; -fx-cursor: hand;" text="MEDICINE" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="28.0" fitWidth="33.0" layoutX="21.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/medicine.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutY="335.0" prefHeight="45.0" prefWidth="166.0" style="-fx-background-color: #49958C;">
+               <children>
+                  <Button layoutX="63.0" layoutY="1.0" mnemonicParsing="false" onAction="#patients" prefHeight="43.0" prefWidth="115.0" style="-fx-background-color: #49958C; -fx-cursor: hand;" text="PATIENTS" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="28.0" fitWidth="33.0" layoutX="14.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/patients.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="515.0" prefWidth="665.0" style="-fx-background-color: #f3f6f6;" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane layoutX="159.0" layoutY="37.0" prefHeight="77.0" prefWidth="270.0" style="-fx-background-color: #45A2BF;">
+               <children>
+                  <Text fill="WHITE" layoutX="63.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Patients:">
+                     <font>
+                        <Font name="Berlin Sans FB" size="24.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="total_patients" fill="WHITE" layoutX="123.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                     <font>
+                        <Font name="Berlin Sans FB" size="24.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="38.0" fitWidth="45.0" layoutX="14.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/total_patients.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="35.0" layoutY="139.0" prefHeight="368.0" prefWidth="517.0">
+               <children>
+                  <Text fill="#1f3f3b" layoutX="14.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Medical Sectors" wrappingWidth="131.87791442871094">
+                     <font>
+                        <Font name="Berlin Sans FB" size="18.0" />
+                     </font>
+                  </Text>
+                  <AnchorPane layoutX="14.0" layoutY="66.0" prefHeight="43.0" prefWidth="139.0" style="-fx-background-color: #84c37b;">
+                     <children>
+                        <Text fill="#0b4a01" layoutX="14.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cardiology">
+                           <font>
+                              <Font name="Berlin Sans FB" size="11.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="cardiology_sum" fill="WHITE" layoutX="33.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="36.29083251953125">
+                           <font>
+                              <Font name="Berlin Sans FB Bold" size="15.0" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="77.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Patients">
+                           <font>
+                              <Font name="Berlin Sans FB Bold" size="12.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="189.0" layoutY="66.0" prefHeight="43.0" prefWidth="139.0" style="-fx-background-color: #84c37b;">
+                     <children>
+                        <Text fill="#5c0000" layoutX="14.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pathology">
+                           <font>
+                              <Font name="Berlin Sans FB" size="11.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="pathology_sum" fill="WHITE" layoutX="38.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="30.95751953125">
+                           <font>
+                              <Font name="Berlin Sans FB Bold" size="15.0" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="77.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Patients">
+                           <font>
+                              <Font name="Berlin Sans FB Bold" size="12.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="363.0" layoutY="66.0" prefHeight="43.0" prefWidth="139.0" style="-fx-background-color: #84c37b;">
+                     <children>
+                        <Text fill="#695f01" layoutX="14.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Surgery">
+                           <font>
+                              <Font name="Berlin Sans FB" size="11.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="surgery_sum" fill="WHITE" layoutX="38.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="31.6241455078125">
+                           <font>
+                              <Font name="Berlin Sans FB Bold" size="15.0" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="77.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Patients">
+                           <font>
+                              <Font name="Berlin Sans FB Bold" size="12.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="17.0" layoutY="175.0" prefHeight="181.0" prefWidth="143.0" style="-fx-background-color: #49958c;">
+                     <children>
+                        <Text fill="WHITE" layoutX="38.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Doctors" wrappingWidth="67.99151611328125">
+                           <font>
+                              <Font name="Berlin Sans FB Bold" size="18.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="num_doctor" fill="WHITE" layoutX="61.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                           <font>
+                              <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="109.0" fitWidth="77.0" layoutX="33.0" layoutY="91.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/doctor.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <Text fill="#1f3f3b" layoutX="9.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="On-Duty Individual" wrappingWidth="149.87791442871094">
+                     <font>
+                        <Font name="Berlin Sans FB" size="18.0" />
+                     </font>
+                  </Text>
+                  <AnchorPane layoutX="189.0" layoutY="175.0" prefHeight="181.0" prefWidth="143.0" style="-fx-background-color: #49958c;">
+                     <children>
+                        <Text fill="WHITE" layoutX="38.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nurses" textAlignment="CENTER" wrappingWidth="67.99151611328125">
+                           <font>
+                              <Font name="Berlin Sans FB Bold" size="18.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="num_nurse" fill="WHITE" layoutX="61.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                           <font>
+                              <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="109.0" fitWidth="77.0" layoutX="33.0" layoutY="91.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/nurse.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children></AnchorPane>
+   </center>
+   <right>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #49958C;" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane layoutX="46.0" layoutY="36.0" prefHeight="108.0" prefWidth="107.0" style="-fx-background-color: #2f615b; -fx-background-radius: 100;">
+               <children>
+                  <ImageView fx:id="img_type" fitHeight="80.0" fitWidth="86.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/user.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutY="144.0" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Text fx:id="name_login" fill="WHITE" layoutX="41.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="120.75">
+                     <font>
+                        <Font name="Berlin Sans FB" size="24.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="type_login" fill="#1f3f3b" layoutX="58.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="73.33331298828125">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="317.0" prefWidth="211.0" style="-fx-background-color: #49958C; -fx-background-radius: 10;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="emedical.New_add_userController">
+   <children>
+      <Text fill="WHITE" layoutX="26.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New User">
+         <font>
+            <Font name="Berlin Sans FB" size="40.0" />
+         </font>
+      </Text>
+      <TextField id="fullname" fx:id="fullname" layoutX="30.0" layoutY="69.0" promptText="Enter your fullname" style="-fx-background-color: #49958C; -fx-border-color: #49958C  #49958C black  #49958C; -fx-prompt-text-fill: white;" />
+      <Button layoutX="52.0" layoutY="259.0" mnemonicParsing="false" onAction="#insert" prefHeight="28.0" prefWidth="98.0" style="-fx-background-color: #2F615B; -fx-cursor: hand;" text="Insert" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="20.0" />
+         </font>
+      </Button>
+      <TextField id="email" fx:id="email" layoutX="30.0" layoutY="112.0" promptText="Enter your email" style="-fx-border-color: #49958C  #49958C black  #49958C; -fx-background-color: #49958C; -fx-prompt-text-fill: white;" />
+      <RadioButton fx:id="yes" layoutX="47.0" layoutY="215.0" mnemonicParsing="false" text="Yes">
+         <toggleGroup>
+            <ToggleGroup fx:id="itern" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="no" layoutX="115.0" layoutY="215.0" mnemonicParsing="false" text="No">
+         <toggleGroup>
+            <ToggleGroup fx:id="spiecies" />
+         </toggleGroup></RadioButton>
+      <ChoiceBox fx:id="choice" layoutX="31.0" layoutY="161.0" prefWidth="150.0" />
+      <Text fill="WHITE" layoutX="86.0" layoutY="212.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Itern:" wrappingWidth="30.6783447265625">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
